@@ -1,0 +1,13 @@
+{
+  "_comment": [
+    "Every path in this repo belongs to exactly one class.",
+    "TOOL    = code, README, docs.",
+    "FIXTURE = none in this repo.",
+    "DATA    = anything a real run produced. Never in this repo.",
+    "Enforced by tools/data_boundary.py from the fleet-guards checkout (git config fleet.guards) through .githooks."
+  ],
+  "_audited": "2026-11-25 AUDIT at repo creation. QuarkDebloat.ps1 writes only to the local Quark install (placeholders, options only), the Quark user profile under %LOCALAPPDATA%\\Quark\\User Data (Default\\Preferences, preference.json, Local State, the updates folder and, as an option, quark-agent\\resources), the QuarkUpdater services and scheduled tasks, Windows Firewall rules, IFEO (option), HKCU and HKLM registry keys, and its own admin-only state folder %ProgramData%\\AppDebloat\\quark (journal, backups, exported registry keys, auto.log, history.log). It never writes into this repo; its console output and logs stay on the machine that ran it. The README and docs name only vendor files, keys, versions and synthetic examples. So the empty data list is an audited conclusion, not a default.",
+  "data": [],
+  "data_sealed": [],
+  "fixture": []
+}

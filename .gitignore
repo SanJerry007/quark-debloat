@@ -1,0 +1,7 @@
+# Run output never belongs in this repo: the script keeps its journal, backups and logs in
+# %ProgramData%\AppDebloat\quark. These patterns catch copies made by hand.
+*.log
+*.transcript.txt
+journal.jsonl
+Thumbs.db
+desktop.ini
